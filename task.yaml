@@ -8,12 +8,8 @@ spec:
   containers:
   - name: ngnix
     image: merpso/ngnix-plus-k8s-ingress
-    ports:
-    - name: nginx-port
-      containerPort: 3001
-      containers:
   - name: k8s-demo
     image: arjunachari12/k8s-demo
     ports:
     - name: nodejs-port
-      containerPort: 3000
+      containerPort: 80
